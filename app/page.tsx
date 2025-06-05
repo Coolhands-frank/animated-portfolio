@@ -5,18 +5,16 @@ import Portfolio from "../components/portfolio/Portfolio"
 export default function Home() {
   return (
     <div className="font-[family-name:var(--font-geist-sans)]">
-      <section className="h-screen snap-center">Hero</section>
-      <section className="h-screen snap-center">
+      <section className="h-screen snap-center overflow-hidden">Hero</section>
+      <section className="h-screen snap-center overflow-hidden">
         <Services />
       </section>
 
-      <section className="h-screen snap-center">
+      <section className="overflow-hiddden">
         <Portfolio />
       </section>
       
-      <section className="h-screen snap-center">
-        
-      </section>
+      
     </div>
   );
 }

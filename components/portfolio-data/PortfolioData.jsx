@@ -2,7 +2,7 @@ const portfolioData = [
     {
         id: 1,
         title: "Krane Finance",
-        description: `An investment platform built with Next.js, Tailwind CSS and Supabase, designed to help users 
+        description: `An investment platform designed to help users 
         manage and grow their investments seamlessly. The platform features a user-friendly dashboard for tracking 
         investments, viewing real-time data, and making informed financial decisions. An admin panel allows efficient 
         management of user data, ensuring security and smooth operations. With a focus on performance, scalability, 
