@@ -3,6 +3,7 @@ import HoverFillDiv from "../HoverFillBox"
 import { motion } from "motion/react"
 import { useRef, useState } from "react"
 import emailjs from "@emailjs/browser"
+import useMediaQuery from "../hooks/useMediaQuery"
 
 const variants = {
     initial: {
@@ -26,6 +27,7 @@ const Contact = () => {
     const [success, setSuccess] = useState(false)
     const [error, setError] = useState(false)
     const [errorMessage, setErrorMessage] = useState()
+    const isMediumUp = useMediaQuery("(min-width: 768px)");
 
     const sendEmail = (e) => {
     e.preventDefault();
@@ -51,21 +53,21 @@ const Contact = () => {
             variants={variants}
             initial="initial"
             whileInView="animate"
-            className="h-full w-full sm:max-w-lg p-6 lg:p-4 md:max-w-4xl lg:max-w-5xl 2xl:max-w-7xl flex flex-col md:flex-row m-auto justify-between items-center"
+            className="h-full w-full sm:max-w-lg p-4 lg:p-8 md:max-w-4xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-screen-2xl flex flex-col md:flex-row m-auto justify-center md:justify-between items-center gap-2 md:gap-4"
         >
             <motion.div className="w-full md:w-1/2 flex flex-col gap-3">
                 <div>
-                    <motion.h1 variants={variants} className="text-2xl md:text-4xl lg:text-6xl 2xl:text-8xl">Get in Touch</motion.h1>
+                    <motion.h1 variants={variants} className="text-2xl md:text-4xl lg:text-6xl 2xl:text-7xl">Get in Touch</motion.h1>
                     <hr className="w-12 md:w-16 lg:w-26 border-2 border-red-500"/>
                 </div>
                 
-                <motion.p variants={variants} className="text-sm lg:text-base">Are you looking for a fast-performing and user-friendly 
+                <motion.p variants={variants} className="text-sm lg:text-base xl:text-lg text-justify md:text-left">Are you looking for a fast-performing and user-friendly 
                     website to represent your product or business? or looking for any kind of 
                     consultation? or want to ask questions? or have some advice for me or just want to 
                     say "Hi", in any case feel free to let me know. I will do my best to respond back.
                     The quickest way to reach out to me is via an email. </motion.p>
                 <motion.div variants={variants}>
-                    <HoverFillDiv className="py-2 px-8 border border-red-500 w-fit text-sm lg:text-base">elendufranklin66@gmail.com</HoverFillDiv>
+                    <HoverFillDiv className="hidden md:block py-2 px-8 border border-red-500 w-fit text-sm lg:text-base xl:text-lg">elendufranklin66@gmail.com</HoverFillDiv>
                 </motion.div>
                 
             </motion.div>
@@ -105,15 +107,15 @@ const Contact = () => {
 
                 <motion.form 
                     ref={formRef}
-                    className="w-full lg:w-96 flex flex-col gap-3"
+                    className="w-full lg:w-96 flex flex-col gap-2 md:gap-3"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition= {{ delay: 4, duration: 1}}
                     onSubmit={sendEmail}
                 >
-                    <input className="border p-2 rounded-md" name="user_name" type="text" required placeholder="Name" />
-                    <input className="border p-2 rounded-md" name="user_email" type="email" required placeholder="Sender Email" />
-                    <textarea rows={8} className="border p-2 rounded-md" name="message" placeholder="Message" />
+                    <input className="border p-1 md:p-2 rounded-md" name="user_name" type="text" required placeholder="Name" />
+                    <input className="border p-1 md:p-2 rounded-md" name="user_email" type="email" required placeholder="Sender Email" />
+                    <textarea rows={isMediumUp ? 8 : 7} className="border p-1 md:p-2 rounded-md" name="message" placeholder="Message" />
                     <HoverFillDiv className="rounded-md">
                     <motion.button 
                         whileTap={{ scale: 0.8 }}

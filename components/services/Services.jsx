@@ -52,9 +52,9 @@ const Services = () => {
 
 
     return (
-        <div className="flex flex-col h-full justify-between">
-            <div className="flex items-center gap-5 self-end my-10 2xl:my-12">
-                <p className="text-sm sm:text-base lg:text-lg 2xl:text-2xl font-extralight text-gray-400 text-right ">
+        <div className="flex flex-col h-full justify-around items-center">
+            <div className="flex items-center gap-5 self-end">
+                <p className="text-sm sm:text-base lg:text-lg xl:text-2xl 2xl:text-4xl font-extralight text-gray-400 text-right ">
                     I focus on helping your brand grow 
                     <br /> and move forward
                 </p>
@@ -66,8 +66,8 @@ const Services = () => {
             whileInView="show" 
             //ref={ref}
             //animate={isInView && "show"}
-            className="flex flex-col gap-2 items-center">
-                <motion.div variants={item} className="flex items-center gap-3 lg:gap-5">
+            className="flex flex-col gap-2 items-center px-3 font-thin text-xl sm:text-2xl lg:text-4xl xl:text-5xl 2xl:text-7xl">
+                <motion.div variants={item} className="flex items-center gap-2 md:gap-3 lg:gap-5">
                     <div className="relative h-12 w-32 lg:w-40 lg:h-14 2xl:w-72 2xl:h-24 rounded-full overflow-hidden">
                         <Image
                           src="/service-photo.jpg" // Update with your actual image path
@@ -76,24 +76,24 @@ const Services = () => {
                           className="object-cover"
                         />
                     </div>
-                    <h1 className="font-thin text-xl sm:text-2xl lg:text-4xl 2xl:text-6xl">
+                    <h1>
                         <b> Your </b> Vision
                     </h1>
                 </motion.div>
-                <motion.div variants={item} className="flex items-center gap-3 lg:gap-5">
-                    <h1 className="font-thin text-xl sm:text-2xl lg:text-4xl 2xl:text-6xl">
+                <motion.div variants={item} className="flex items-center gap-2 md:gap-3 lg:gap-5">
+                    <h1>
                         <b>Engineered</b> to life.
                     </h1>
-                    <button className="h-12 w-32 lg:w-40 lg:h-14 2xl:w-72 2xl:h-24 rounded-full border-none bg-red-500 text-sm sm:text-base lg:text-lg 2xl:text-xl">WHAT WE DO?</button>
+                    <button className="h-12 w-32 lg:w-40 lg:h-14 2xl:w-72 2xl:h-24 rounded-full border-none bg-red-500 text-red-100 text-sm sm:text-sm lg:text-lg 2xl:text-xl">WHAT WE DO?</button>
                 </motion.div>
             </motion.div>
 
-            <div className="flex flex-col gap-4 sm:gap-0 sm:flex-row sm:max-w-2xl lg:max-w-7xl m-auto ">
+            <div className="text-center md:text-left flex flex-col gap-4 sm:gap-0 sm:flex-row sm:max-w-2xl lg:max-w-7xl 2xl:max-w-screen-2xl m-4">
                { services.map((service) => {
                     return (
                     <div key={service.title} className="p-3 lg:p-4 2xl:p-8 sm:border sm:border-gray-800 flex flex-col gap-2 hover:bg-red-500">
-                        <h2 className="font-bold text-sm lg:text-lg 2xl:text-2xl">{service.title}</h2>
-                        <p className="hidden sm:block text-xs lg:text-base 2xl:text-xl">{service.service}</p>
+                        <h2 className="font-bold text-sm lg:text-base xl:text-lg 2xl:text-3xl">{service.title}</h2>
+                        <p className="hidden sm:block text-xs lg:text-sm xl:text-base 2xl:text-2xl">{service.service}</p>
                     </div>
                 )}) }
 
