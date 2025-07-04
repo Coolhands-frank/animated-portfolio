@@ -24,7 +24,7 @@ const SingleProject = ({ item }) => {
     return (
         <section className="h-screen snap-center">
             <div className="flex items-center justify-center w-full h-full overflow-hidden">  
-                <div className="flex flex-col mt-4 max-w-md md:flex-row md:max-w-3xl lg:max-w-6xl xl:max-w-7xl 2xl:max-w-screen-2xl w-full h-full justify-center items-center gap-4 md:m-auto xl:gap-12">
+                <div className="flex flex-col mt-5 max-w-md md:flex-row md:max-w-3xl lg:max-w-6xl xl:max-w-7xl 2xl:max-w-screen-2xl w-full h-full justify-center items-center gap-4 md:m-auto xl:gap-12">
                     <div ref={ref} className="relative w-full h-[200px] md:h-1/2 2xl:h-[600px]">
                         <Image
                             src={item.imageUrl}
@@ -88,9 +88,9 @@ const Portfolio = () => {
     return (
         <div className="relative p-3 lg:px-12 md:p-6 xl:max-w-7xl 2xl:max-w-screen-2xl md:m-auto" ref={ref}>
 
-            <div className="sticky top-0 left-0 pt-2 md:pt-6 lg:pt-8 2xl:pt-10 text-xl sm:text-2xl lg:text-4xl xl:text-5xl 2xl:text-7xl z-10 bg-[#0a0a0a]">
+            <div className="sticky top-0 left-0 pt-2 md:pt-6 lg:pt-8 2xl:pt-10 text-center lg:text-left text-xl sm:text-2xl lg:text-4xl xl:text-5xl 2xl:text-7xl z-10 bg-gray-100 dark:bg-gray-900 ">
                 <h1>Portfolio Highlights</h1>
-                <motion.div style={{ scaleX }} className="origin-left h-2 mt-2 bg-red-500"></motion.div>
+                <motion.div style={{ scaleX }} className="origin-center lg:origin-left h-2 mt-1 bg-red-500"></motion.div>
             </div>
             
             { portfolioData.map(item => (

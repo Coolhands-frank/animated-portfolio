@@ -55,8 +55,8 @@ const Contact = () => {
             whileInView="animate"
             className="h-full w-full sm:max-w-lg p-4 lg:p-8 md:max-w-4xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-screen-2xl flex flex-col md:flex-row m-auto justify-center md:justify-between items-center gap-2 md:gap-4"
         >
-            <motion.div className="w-full md:w-1/2 flex flex-col gap-3">
-                <div>
+            <motion.div className="w-full md:w-1/2 flex flex-col items-center md:items-start gap-3">
+                <div className="flex flex-col ">
                     <motion.h1 variants={variants} className="text-2xl md:text-4xl lg:text-6xl 2xl:text-7xl">Get in Touch</motion.h1>
                     <hr className="w-12 md:w-16 lg:w-26 border-2 border-red-500"/>
                 </div>
@@ -72,7 +72,7 @@ const Contact = () => {
                 
             </motion.div>
 
-            <div className="w-full md:w-96 relative">
+            <div className="w-full md:w-96 relative flex items-center">
                 <motion.div 
                     className="absolute left-1/2 transform -translate-x-1/2 stroke-red-500 -z-10" 
                     initial={{ opacity: 1 }}
