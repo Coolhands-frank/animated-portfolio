@@ -45,7 +45,7 @@ const About = () => {
 
             <div className="h-full flex flex-col md:flex-1 items-center justify-between md:justify-center md:flex-row gap-2 md:gap-3 lg:gap-5 xl:gap-8">
                 <motion.div 
-                    className="relative w-full h-full md:h-4/5 2xl:h-[600px]"
+                    className="relative w-full h-48 md:h-4/5 2xl:h-[600px]"
                     initial={{ scale: 0.8, opacity: 0 }}
                     whileInView={{ scale: 1, opacity: 1 }}
                     transition={{ duration: 0.7, delay: 0.3 }}
