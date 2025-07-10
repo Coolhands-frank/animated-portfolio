@@ -10,7 +10,7 @@ export default function Hero() {
   return (
   
     <main>
-      <div className="relative px-6 md:px-8 lg:px-20">
+      <div className="relative px-6 md:px-8 lg:px-20 min-h-screen">
         <div className="hidden md:block absolute top-0 right-0 h-full w-3/5 md:w-7/8 -z-10"> {/* Adjust width as needed */}
             <svg id="visual" 
                 viewBox="0 0 900 600" 
@@ -37,8 +37,8 @@ export default function Hero() {
         </div>
         <Navbar />
 
-        <div className="container max-w-7xl 2xl:max-w-screen-2xl m-auto h-[calc(100vh-6rem)] flex flex-col md:flex-row md:justify-between">
-          <div className="md:-ml-8 lg:-ml-12 -mt-8 md:mt-0 h-full flex flex-col justify-center items-center gap-4 md:gap-6 lg:gap-8 w-full md:w-1/2 text-center ">
+        <div className="container max-w-7xl 2xl:max-w-screen-2xl m-auto h-full flex flex-col gap-3 md:gap-0 md:flex-row md:items-center md:justify-between">
+          <div className="md:-ml-8 lg:-ml-12 md:mt-0 h-full flex flex-col justify-center items-center gap-4 md:gap-6 lg:gap-8 w-full md:w-1/2 text-center ">
             <motion.div 
               initial = {{opacity:0, y:-60}}
               whileInView = {{opacity:1, y: 0}}
@@ -73,7 +73,7 @@ export default function Hero() {
           </div>
           
             <div className="md:w-1/2 flex flex-col md:flex-row items-center md:justify-end z-20"> {/* Higher z-index */}
-              <div className="relative w-72 h-72 md:w-[500px] md:h-[500px] flex items-center justify-center">
+              <div className="relative w-80 h-80 md:w-[500px] md:h-[500px] flex items-center justify-center">
                 <Image
                   src="/programmer-illustration.webp"
                   alt="Developer Illustration"
