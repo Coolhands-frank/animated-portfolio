@@ -2,7 +2,7 @@
 
 import ToggleButton from "./toggleButton/ToggleButton"
 import Links from "./links/Links"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { motion } from "motion/react"
 
 const variants = {

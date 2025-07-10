@@ -1,7 +1,6 @@
 "use client"
 import { motion } from "motion/react";
 import Image from "next/image"
-import portfolioData from "../portfolio-data/PortfolioData"
 import SkillIcon from "@/components/SkillIcon";
 import HoverFillDiv from "../HoverFillBox";
 import { 

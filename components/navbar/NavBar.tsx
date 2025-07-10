@@ -1,7 +1,6 @@
 "use client"
 
 import { motion } from "motion/react"
-import Link from "next/link";
 import { FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
 import ThemeProvider from "@/components/providers/ThemeProvider";
 import Sidebar from "../sidebar/Sidebar";

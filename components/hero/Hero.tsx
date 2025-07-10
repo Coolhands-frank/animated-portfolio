@@ -44,7 +44,7 @@ export default function Hero() {
               whileInView = {{opacity:1, y: 0}}
               transition = {{duration: 0.8, ease: "easeOut"}}
             >
-                <p className="text-lg lg:text-xl mb-1 lg:mb-2">Hello, I'm</p>
+                <p className="text-lg lg:text-xl mb-1 lg:mb-2">{"Hello, I'm"}</p>
                 <h1 className="text-3xl w-full md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-2 lg:mb-4">Elendu Franklin</h1>
                 <p className="text-lg md:text-xl">A Fullstack Developer</p>
             </motion.div>

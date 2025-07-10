@@ -2,7 +2,6 @@
 import portfolioData from "../portfolio-data/PortfolioData"
 import { motion, useScroll, useSpring, useInView, useTransform } from "motion/react"
 import { useRef } from "react"
-import Link from "next/link"
 import { FaGithub } from 'react-icons/fa'
 import { FiArrowRight } from 'react-icons/fi'
 import Image from "next/image"

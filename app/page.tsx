@@ -1,10 +1,8 @@
-import Image from "next/image";
 import Services from "../components/services/Services"
 import Portfolio from "../components/portfolio/Portfolio"
 import Contact from "../components/contact/Contact"
 import About from "../components/about/About"
 import Hero from "../components/hero/Hero"
-import HeroSection from "../components/HeroSection"
 
 export default function Home() {
   return (

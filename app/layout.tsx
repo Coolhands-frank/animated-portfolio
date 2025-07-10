@@ -27,7 +27,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Elendu Franklin | A Fullstack Developer based in Nigeria",
   description: "Nextjs, React, Javascript, Tailwind CSS, Supabase, AuthO",
-  themeColor: '#000000', // optional, improves color matching
+};
+
+export const viewport = {
+  themeColor: '#ffffff', // optional, improves color matching
 };
 
 export default function RootLayout({
