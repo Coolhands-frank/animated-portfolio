@@ -73,7 +73,7 @@ export default function Hero() {
           </div>
           
             <div className="md:w-1/2 flex flex-col md:flex-row items-center md:justify-end z-20"> {/* Higher z-index */}
-              <div className="relative w-64 h-64 md:w-[500px] md:h-[500px] flex items-center justify-center">
+              <div className="relative w-72 h-72 md:w-[500px] md:h-[500px] flex items-center justify-center">
                 <Image
                   src="/programmer-illustration.webp"
                   alt="Developer Illustration"
