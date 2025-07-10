@@ -48,23 +48,32 @@ const SingleProject = ({ item }) => {
 
                         <div className="flex gap-4 items-center text-xs md:text-sm xl:text-base 2xl:text-2xl">
                             
-                            <Link href="#">
+                            
+                            <a
+                                 href={item.liveLink}
+                                 target="_blank"
+                                 rel="noopener noreferrer"
+                            >
                                 <HoverFillDiv className="p-2 border-b border-red-500">
                                     <div className="flex items-center gap-2">
                                         <p>Visit site</p> 
                                         <FiArrowRight size={20} />
                                     </div>
-                                </HoverFillDiv>    
-                            </Link>
+                                </HoverFillDiv> 
+                            </a>
 
-                            <Link href="#">
+                            <a
+                                 href={item.github}
+                                 target="_blank"
+                                 rel="noopener noreferrer"
+                            >
                                 <motion.div 
                                     whileHover={{ scale: 1.2 }}
                                     whileTap={{ scale: 0.8 }}
                                 >
                                     <FaGithub size={24} />
                                 </motion.div>
-                            </Link>
+                            </a>
                         </div>
                     </motion.div>
                 </div>

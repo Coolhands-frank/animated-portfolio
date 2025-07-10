@@ -26,7 +26,7 @@ const skills = [
 const About = () => {
     return (
         <motion.div 
-            className="h-screen p-4 md:py-6 lg:px-8 flex flex-col items-center max-w-xl sm:max-w-2xl md:max-w-4xl lg:max-w-6xl xl:max-w-7xl 2xl:max-w-screen-2xl xl:py-12 2xl:p-20 m-auto"
+            className="h-screen py-4 px-6 md:py-6 lg:px-8 flex flex-col items-center max-w-xl sm:max-w-2xl md:max-w-4xl lg:max-w-6xl xl:max-w-7xl 2xl:max-w-screen-2xl xl:py-12 2xl:p-20 m-auto"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
@@ -46,17 +46,17 @@ const About = () => {
 
             <div className="h-full flex flex-col md:flex-1 items-center justify-between md:justify-center md:flex-row gap-2 md:gap-3 lg:gap-5 xl:gap-8">
                 <motion.div 
-                    className="relative w-full h-full sm:h-48 md:h-2/3 2xl:h-[600px]"
+                    className="relative w-full h-full sm:h-48 md:h-4/5 2xl:h-[600px]"
                     initial={{ scale: 0.8, opacity: 0 }}
                     whileInView={{ scale: 1, opacity: 1 }}
                     transition={{ duration: 0.7, delay: 0.3 }}
                     viewport={{ amount: 0.3 }}
                 >
                     <Image
-                        src={portfolioData[0].imageUrl}
+                        src="/about-image.png"
                         alt="My photo"
                         fill
-                        className="object-cover rounded-lg"
+                        className="w-96 h-full object-cover object-[10%_30%] md:object-[20%_35%] md:rounded-full"
                     />
                 </motion.div>
 
@@ -91,7 +91,7 @@ const About = () => {
                         transition={{ delay: 0.7, duration: 0.5 }}
                     >
                         <h3 className="mb-3">Skillset</h3>
-                        <div className="grid grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-2">
+                        <div className="grid grid-cols-4 md:grid-cols-4 xl:grid-cols-5 gap-2">
                             {skills.map((skill, index) => (
                                 <motion.div 
                                     key={index}

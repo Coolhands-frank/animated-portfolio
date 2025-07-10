@@ -28,13 +28,27 @@ const itemVariants = {
     }
 }
 
-const Links = () => {
+type LinksProps = {
+    setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const Links = ({ setOpen }: LinksProps) => {
     const items= ["Home", "services", "Work", "About", "Contact"]
 
     return (
-        <motion.div variants={variants} className="absolute flex flex-col w-full h-full justify-center items-center gap-5 ">
+        <motion.div 
+            variants={variants} 
+            className="absolute flex flex-col w-full h-full justify-center items-center gap-5 "
+        >
             {items.map((item, index) => (
-                <motion.div className="text-2xl" key={item} variants={itemVariants} whileHover={{scale:1.1}} whileTap={{scale:0.95}}>
+                <motion.div 
+                    className="text-2xl" 
+                    key={item} 
+                    variants={itemVariants} 
+                    whileHover={{scale:1.1}} 
+                    whileTap={{scale:0.95}}
+                    onClick={() => setOpen(false)}
+                >
                     <Link href={index==0 ? "#home" : index==1 ? "#services" : index==2 ? "#work" : index==3 ? "#about" : "#contact"}>
                         {item}
                     </Link>

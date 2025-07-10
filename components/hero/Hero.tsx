@@ -57,10 +57,10 @@ export default function Hero() {
 
               <div className="mb-2 md:mb-3 lg:mb-5 flex gap-3">
                   <div className="text-gray-100 hover:text-gray-900 dark:hover:text-gray-100 dark:text-gray-900 px-4 md:px-6 py-2 md:py-3 border border-red-500 rounded-lg bg-red-500 font-medium shadow-lg hover:bg-transparent transition w-fit">
-                    <Link href="#">Hire Me</Link>
+                    <Link href="#about">Hire Me</Link>
                   </div>
                   <div className=" px-4 md:px-6 py-2 md:py-3 border border-red-500 rounded-lg bg-transparent font-normal shadow-lg hover:border-2 transition w-fit">
-                    <Link href="#">Get in Touch</Link>
+                    <Link href="#contact">Get in Touch</Link>
                   </div>   
               </div>
 

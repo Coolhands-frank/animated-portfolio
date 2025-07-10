@@ -2,6 +2,15 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@theme {
+  /* Define your font families, referencing the CSS variables from next/font */
+  --font-sans: var(--font-inter);   /* Default sans-serif (for body text) */
+  --font-display: var(--font-playfair); /* Custom name for headings */
 
+  /* You can define other theme variables here too, e.g.:
+  --color-primary: #3b82f6;
+  --spacing-section: 4rem;
+  */
+}
 
 

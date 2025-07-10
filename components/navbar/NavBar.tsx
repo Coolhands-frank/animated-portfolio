@@ -27,16 +27,54 @@ const Navbar = () => {
                     transition= {{duration: 0.5}}
                     className="flex items-center space-x-2 md:space-x-6"
                 >
-                    <Link href="#">
-                        <FaGithub className="h-6 w-6"/>
-                    </Link>
-                    <Link href="#">
-                        <FaLinkedin className="h-6 w-6"/>
-                    </Link>
-                    <Link href="#">
-                        <FaTwitter className="h-6 w-6"/>
-                    </Link>
-                    <ThemeProvider />
+                    <motion.div
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{ scale: 0.8 }}
+                    >
+                        <a
+                            href="https://github.com/Coolhands-frank"
+                            title="Link to Github Profile"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <FaGithub className="h-6 w-6"/>
+                        </a>
+                    </motion.div>
+
+                    <motion.div
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{ scale: 0.8 }}
+                    >
+                        <a
+                            href="https://www.linkedin.com/in/franklin-elendu/"
+                            title="Link to Linkedin Profile"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <FaLinkedin className="h-6 w-6"/>
+                        </a>
+                    </motion.div>
+
+                    <motion.div
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{ scale: 0.8 }}
+                    >
+                        <a
+                            href="https://x.com/FranklinElendu"
+                            title="Link to Twitter Profile"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <FaTwitter className="h-6 w-6"/>
+                        </a>
+                    </motion.div>
+
+                    <motion.div
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{ scale: 0.8 }}
+                    >
+                        <ThemeProvider />
+                    </motion.div>
                 </motion.div>
             </div>
         </nav>
