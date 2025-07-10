@@ -111,7 +111,9 @@ const About = () => {
                         transition={{ delay: 1.2, duration: 0.4 }}
                         whileTap={{ scale: 0.8 }}
                     >
-                        <HoverFillDiv className="w-full text-center rounded-md py-2 border border-red-500 text-xs md:text-sm xl:text-base">My Resume</HoverFillDiv>
+                        <a href="https://drive.google.com/file/d/10ja_LUELvqN_79BgY70Gtp6LjkjJXF6b/view?usp=sharing" target="_blank">
+                            <HoverFillDiv className="w-full text-center rounded-md py-2 border border-red-500 text-xs md:text-sm xl:text-base">My Resume</HoverFillDiv>
+                        </a>
                     </motion.div>
 
                 </motion.div>
