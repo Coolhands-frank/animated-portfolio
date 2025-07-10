@@ -41,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className="snap-y snap-mandatory scroll-smooth ">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${playfair.variable} font-display antialiased border-box bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300`}
+        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${playfair.variable} font-sans antialiased border-box bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300`}
       >
         <Provider>
           {children}
