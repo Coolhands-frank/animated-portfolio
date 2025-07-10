@@ -25,7 +25,7 @@ const skills = [
 const About = () => {
     return (
         <motion.div 
-            className="h-screen py-4 px-6 md:py-6 lg:px-8 flex flex-col items-center max-w-xl sm:max-w-2xl md:max-w-4xl lg:max-w-6xl xl:max-w-7xl 2xl:max-w-screen-2xl xl:py-12 2xl:p-20 m-auto"
+            className="py-4 px-6 md:py-6 lg:px-8 flex flex-col items-center max-w-xl sm:max-w-2xl md:max-w-4xl lg:max-w-6xl xl:max-w-7xl 2xl:max-w-screen-2xl xl:py-12 2xl:p-20 m-auto"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
