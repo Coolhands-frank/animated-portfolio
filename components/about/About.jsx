@@ -43,7 +43,7 @@ const About = () => {
                 <hr className="w-12 md:w-16 lg:w-26 border-2 border-red-500"/>
             </motion.div>
 
-            <div className="h-full flex flex-col items-center md:justify-center md:flex-row gap-2 md:gap-3 lg:gap-5 xl:gap-8">
+            <div className="h-full flex flex-col items-center justify-center md:flex-row gap-2 md:gap-3 lg:gap-5 xl:gap-8">
                 <motion.div 
                     className="relative w-full h-52 md:h-4/5 2xl:h-[600px]"
                     initial={{ scale: 0.8, opacity: 0 }}
