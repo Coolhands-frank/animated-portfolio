@@ -37,7 +37,7 @@ export default function Hero() {
         </div>
         <Navbar />
 
-        <div className="container max-w-7xl 2xl:max-w-screen-2xl m-auto h-full flex flex-col gap-3 md:gap-0 md:flex-row md:items-center md:justify-between">
+        <div className="container pb-6 border-2 max-w-7xl 2xl:max-w-screen-2xl md:m-auto h-[calc(100vh-100px)] flex flex-col items-between gap-3 md:gap-0 md:flex-row md:items-center md:justify-between">
           <div className="md:-ml-8 lg:-ml-12 md:mt-0 h-full flex flex-col justify-center items-center gap-4 md:gap-6 lg:gap-8 w-full md:w-1/2 text-center ">
             <motion.div 
               initial = {{opacity:0, y:-60}}

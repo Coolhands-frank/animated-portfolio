@@ -53,7 +53,7 @@ const Contact = () => {
             variants={variants}
             initial="initial"
             whileInView="animate"
-            className="h-full w-full sm:max-w-lg p-4 lg:p-8 md:max-w-4xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-screen-2xl flex flex-col md:flex-row m-auto justify-center md:justify-between items-center gap-2 md:gap-4"
+            className="h-full w-full sm:max-w-lg p-6 lg:p-8 md:max-w-4xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-screen-2xl flex flex-col md:flex-row m-auto justify-center md:justify-between items-center gap-2 md:gap-4"
         >
             <motion.div className="w-full md:w-1/2 flex flex-col items-center md:items-start gap-3">
                 <div className="flex flex-col ">

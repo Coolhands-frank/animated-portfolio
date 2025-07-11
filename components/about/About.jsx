@@ -33,7 +33,7 @@ const About = () => {
         >
 
             <motion.div 
-                className="mb-2 md:mb-auto lg:self-start"
+                className="md:mb-auto lg:self-start"
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.3, duration: 0.6 }}
