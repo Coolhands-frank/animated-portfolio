@@ -1,20 +1,6 @@
 const portfolioData = [
     {
         id: 1,
-        title: "Krane Finance",
-        description: `An investment platform designed to help users 
-        manage and grow their investments seamlessly. The platform features a user-friendly dashboard for tracking 
-        investments, viewing real-time data, and making informed financial decisions. An admin panel allows efficient 
-        management of user data, ensuring security and smooth operations. With a focus on performance, scalability, 
-        and great UI/UX, this platform provides a seamless experience for both investors and administrators. 
-        Still under construction...`,
-        skills: ["Next.js", "Supabase", "Javascript", "Tailwind CSS"],
-        github: "https://github.com/Coolhands-frank/Investment-Site",
-        liveLink: "https://coolhands-investmentsite.onrender.com",
-        imageUrl: "/Hero.png"
-    },
-    {
-        id: 2,
         title: "Student Course Management System",
         description: `A Student Course Management System built with Laravel. 
         It features robust user authentication (powered by Laravel Breeze), comprehensive CRUD operations for managing students and courses, 
@@ -26,7 +12,7 @@ const portfolioData = [
         imageUrl: "/course_management_app.png"
     },
     {
-        id: 3,
+        id: 2,
         title: "Skill Match Dashboard",
         description: `A responsive dashboard built with Next.js App Router and Tailwind CSS, 
         featuring realtime and interactive data visualizations with Recharts and a real-time validated data 
@@ -38,7 +24,7 @@ const portfolioData = [
         imageUrl: "/skill-dashboard.png"
     },
     {
-        id: 4,
+        id: 3,
         title: "Quizzical App",
         description: `A Trivia React App which fetches trivia questions from an API,
                 allows users to read and answer questions, 
@@ -49,9 +35,23 @@ const portfolioData = [
         imageUrl: "/quiz.jpg"
     },
     {
+        id: 4,
+        title: "Krane Finance",
+        description: `A mock investment platform designed to help users 
+        manage and grow their investments seamlessly. The platform features a user-friendly dashboard for tracking 
+        investments, viewing real-time data, and making informed financial decisions. An admin panel allows efficient 
+        management of user data, ensuring security and smooth operations. With a focus on performance, scalability, 
+        and great UI/UX, this platform provides a seamless experience for both investors and administrators. 
+        Still under construction...`,
+        skills: ["Next.js", "Supabase", "Javascript", "Tailwind CSS"],
+        github: "https://github.com/Coolhands-frank/Investment-Site",
+        liveLink: "https://coolhands-investmentsite.onrender.com",
+        imageUrl: "/Hero.png"
+    },
+    {
         id: 5,
         title: "Job Match Dashboard",
-        description: `A dynamic job-matching platform built with Next.js, and Tailwind CSS, 
+        description: `A dynamic job-matching dashboard built with Next.js, and Tailwind CSS, 
                 designed to provide job recommendations based on user skills. 
                 The dashboard fetches job listings, calculates user's match scores, and visually represents job suitability with color-coded indicators. 
                 Users can view detailed job descriptions, receive upskilling suggestions for missing skills, 
