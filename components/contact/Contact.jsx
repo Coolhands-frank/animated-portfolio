@@ -113,8 +113,8 @@ const Contact = () => {
                     transition= {{ delay: 4, duration: 1}}
                     onSubmit={sendEmail}
                 >
-                    <input className="border p-1 md:p-2 rounded-md" name="user_name" type="text" required placeholder="Name" />
-                    <input className="border p-1 md:p-2 rounded-md" name="user_email" type="email" required placeholder="Sender Email" />
+                    <input className="border p-1 md:p-2 rounded-md" name="name" type="text" required placeholder="Name" />
+                    <input className="border p-1 md:p-2 rounded-md" name="email" type="email" required placeholder="Sender Email" />
                     <textarea rows={isMediumUp ? 8 : 7} className="border p-1 md:p-2 rounded-md" name="message" placeholder="Message" />
                     <HoverFillDiv className="rounded-md">
                     <motion.button 

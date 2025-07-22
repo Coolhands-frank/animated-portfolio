@@ -66,7 +66,7 @@ const Services = () => {
             whileInView="show" 
             //ref={ref}
             //animate={isInView && "show"}
-            className="flex flex-col gap-2 items-center px-3 font-thin text-xl sm:text-2xl lg:text-4xl xl:text-5xl 2xl:text-7xl">
+            className="flex flex-col gap-2 items-center px-3 font-thin text-xl sm:text-2xl lg:text-4xl xl:text-6xl 2xl:text-7xl">
                 <motion.div variants={item} className="flex items-center gap-2 md:gap-3 lg:gap-5">
                     <div className="relative h-12 w-32 lg:w-40 lg:h-14 2xl:w-72 2xl:h-24 rounded-full overflow-hidden">
                         <Image
@@ -93,7 +93,7 @@ const Services = () => {
                     return (
                     <div key={service.title} className="p-3 lg:p-4 2xl:p-8 sm:border sm:border-gray-800 flex flex-col gap-2 hover:bg-red-500">
                         <h2 className="font-bold text-sm lg:text-base xl:text-lg 2xl:text-3xl">{service.title}</h2>
-                        <p className="hidden sm:block text-xs lg:text-sm xl:text-base 2xl:text-2xl">{service.service}</p>
+                        <p className="hidden sm:block font-light text-xs lg:text-sm xl:text-base 2xl:text-2xl">{service.service}</p>
                     </div>
                 )}) }
 

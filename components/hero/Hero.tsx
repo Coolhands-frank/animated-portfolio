@@ -23,8 +23,9 @@ export default function Hero() {
             >
                 <defs>
                   <linearGradient id="redGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stopColor="#ef4444" /> {/* light red */}
-                    <stop offset="100%" stopColor="#b91c1c" /> {/* dark red */}
+                    <stop offset="0%" stopColor="#f87171" /> {/* light red */}
+                    <stop offset="50%" stopColor="#ef4444" /> {/* light red */}
+                    <stop offset="100%" stopColor="#dc2626" /> {/* dark red */}
                   </linearGradient>
                 </defs>
                 <path 
@@ -56,7 +57,7 @@ export default function Hero() {
             >
 
               <div className="mb-2 md:mb-3 lg:mb-5 flex gap-3">
-                  <div className="text-gray-100 hover:text-gray-900 dark:hover:text-gray-100 dark:text-gray-900 px-4 md:px-6 py-2 md:py-3 border border-red-500 rounded-lg bg-red-500 font-medium shadow-lg hover:bg-transparent transition w-fit">
+                  <div className="text-gray-100 hover:text-gray-900 dark:hover:text-gray-100 px-4 md:px-6 py-2 md:py-3 border border-red-500 rounded-lg bg-red-500 font-medium shadow-lg hover:bg-transparent transition w-fit">
                     <Link href="#about">Hire Me</Link>
                   </div>
                   <div className=" px-4 md:px-6 py-2 md:py-3 border border-red-500 rounded-lg bg-transparent font-normal shadow-lg hover:border-2 transition w-fit">
