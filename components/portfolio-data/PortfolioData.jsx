@@ -13,29 +13,6 @@ const portfolioData = [
     },
     {
         id: 2,
-        title: "Skill Test Dashboard",
-        description: `A responsive dashboard built with Next.js App Router and Tailwind CSS, 
-        featuring realtime and interactive data visualizations with Recharts and a real-time validated data 
-        update form using React Hook Form. The project demonstrates clean component architecture, 
-        responsive design, and dynamic form validation.`,
-        skills: ["Next.js", "Tailwind CSS", "Context API (State Management)", "React Hook Form", "Recharts"],
-        github: "https://github.com/Coolhands-frank/user-performance-dashboard",
-        liveLink: "https://skilltestdashboard.onrender.com/",
-        imageUrl: "/skill-dashboard.png"
-    },
-    {
-        id: 3,
-        title: "Quizzical App",
-        description: `A Trivia React App which fetches trivia questions from an API,
-                allows users to read and answer questions, 
-                then shows correct answers and rate user score on submit.`,
-        skills: ["React", "Javascript", "External API Integration"],
-        github: "https://github.com/Coolhands-frank/Quizzical_App",
-        liveLink: "https://quizzical-coolhands.onrender.com",
-        imageUrl: "/quiz.jpg"
-    },
-    {
-        id: 4,
         title: "Krane Finance",
         description: `A mock investment platform designed to help users 
         manage and grow their investments seamlessly. The platform features a user-friendly dashboard for tracking 
@@ -47,6 +24,29 @@ const portfolioData = [
         github: "https://github.com/Coolhands-frank/Investment-Site",
         liveLink: "https://kranefinance.onrender.com",
         imageUrl: "/Hero.png"
+    },
+    {
+        id: 3,
+        title: "Skill Test Dashboard",
+        description: `A responsive dashboard built with Next.js App Router and Tailwind CSS, 
+        featuring realtime and interactive data visualizations with Recharts and a real-time validated data 
+        update form using React Hook Form. The project demonstrates clean component architecture, 
+        responsive design, and dynamic form validation.`,
+        skills: ["Next.js", "Tailwind CSS", "Context API (State Management)", "React Hook Form", "Recharts"],
+        github: "https://github.com/Coolhands-frank/user-performance-dashboard",
+        liveLink: "https://skilltestdashboard.onrender.com/",
+        imageUrl: "/skill-dashboard.png"
+    },
+    {
+        id: 4,
+        title: "Quizzical App",
+        description: `A Trivia React App which fetches trivia questions from an API,
+                allows users to read and answer questions, 
+                then shows correct answers and rate user score on submit.`,
+        skills: ["React", "Javascript", "External API Integration"],
+        github: "https://github.com/Coolhands-frank/Quizzical_App",
+        liveLink: "https://quizzical-coolhands.onrender.com",
+        imageUrl: "/quiz.jpg"
     },
     {
         id: 5,
