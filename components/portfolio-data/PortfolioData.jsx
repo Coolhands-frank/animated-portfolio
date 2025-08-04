@@ -13,14 +13,14 @@ const portfolioData = [
     },
     {
         id: 2,
-        title: "Skill Match Dashboard",
+        title: "Skill Test Dashboard",
         description: `A responsive dashboard built with Next.js App Router and Tailwind CSS, 
         featuring realtime and interactive data visualizations with Recharts and a real-time validated data 
         update form using React Hook Form. The project demonstrates clean component architecture, 
         responsive design, and dynamic form validation.`,
         skills: ["Next.js", "Tailwind CSS", "Context API (State Management)", "React Hook Form", "Recharts"],
         github: "https://github.com/Coolhands-frank/user-performance-dashboard",
-        liveLink: "https://whatbytes-skill-test.onrender.com",
+        liveLink: "https://skilltestdashboard.onrender.com/",
         imageUrl: "/skill-dashboard.png"
     },
     {
@@ -45,7 +45,7 @@ const portfolioData = [
         Still under construction...`,
         skills: ["Next.js", "Supabase", "Javascript", "Tailwind CSS"],
         github: "https://github.com/Coolhands-frank/Investment-Site",
-        liveLink: "https://coolhands-investmentsite.onrender.com",
+        liveLink: "https://kranefinance.onrender.com",
         imageUrl: "/Hero.png"
     },
     {

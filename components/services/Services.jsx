@@ -84,7 +84,7 @@ const Services = () => {
                     <h1>
                         <b>Engineered</b> to life.
                     </h1>
-                    <button className="h-12 w-32 lg:w-40 lg:h-14 2xl:w-72 2xl:h-24 rounded-full border-none bg-red-500 text-red-100 text-sm sm:text-sm lg:text-lg 2xl:text-xl">WHAT WE DO?</button>
+                    <button className="h-12 w-32 lg:w-40 lg:h-14 2xl:w-72 2xl:h-24 rounded-full border-none bg-red-500 text-red-100 text-sm sm:text-sm lg:text-lg 2xl:text-xl font-medium">WHAT WE DO?</button>
                 </motion.div>
             </motion.div>
 
