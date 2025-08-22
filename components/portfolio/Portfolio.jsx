@@ -24,7 +24,7 @@ const SingleProject = ({ item }) => {
         <section className="h-screen snap-center">
             <div className="flex items-center justify-center w-full h-full overflow-hidden">  
                 <div className="flex flex-col mt-5 max-w-md md:flex-row md:max-w-3xl lg:max-w-6xl xl:max-w-7xl 2xl:max-w-screen-2xl w-full h-full justify-center items-center gap-4 md:m-auto xl:gap-12">
-                    <div ref={ref} className="relative w-full h-[200px] md:h-1/2 2xl:h-[600px]">
+                    <div ref={ref} className="relative w-full h-[200px] md:h-1/2 2xl:h-[400px]">
                         <Image
                             src={item.imageUrl}
                             alt="project image"
